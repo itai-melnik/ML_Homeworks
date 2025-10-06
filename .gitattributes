@@ -1,0 +1,64 @@
+# --------------------------------------------------------
+# GLOBAL NORMALIZATION
+# --------------------------------------------------------
+
+# Automatically normalize text files to use LF line endings in the repo
+# and native endings on checkout (LF on macOS/Linux, CRLF on Windows)
+* text=auto eol=lf
+
+# --------------------------------------------------------
+# CODE FILES
+# --------------------------------------------------------
+*.py text eol=lf
+*.ipynb text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.tsv text eol=lf
+*.txt text eol=lf
+
+# --------------------------------------------------------
+# CONFIG & DATA
+# --------------------------------------------------------
+*.ini text eol=lf
+*.conf text eol=lf
+*.cfg text eol=lf
+
+# --------------------------------------------------------
+# NOTEBOOK & MODEL ARTIFACTS (Treated as binary)
+# --------------------------------------------------------
+*.pkl binary
+*.joblib binary
+*.h5 binary
+*.pt binary
+*.pth binary
+*.onnx binary
+*.model binary
+
+# --------------------------------------------------------
+# IMAGES AND MEDIA (Always binary)
+# --------------------------------------------------------
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+*.pdf binary
+
+# --------------------------------------------------------
+# ARCHIVES & LARGE FILES
+# --------------------------------------------------------
+*.zip binary
+*.tar binary
+*.gz binary
+*.bz2 binary
+*.7z binary
+
+# --------------------------------------------------------
+# OS-SPECIFIC FILES (Ignored or normalized)
+# --------------------------------------------------------
+*.bat text eol=crlf
+*.ps1 text eol=crlf
